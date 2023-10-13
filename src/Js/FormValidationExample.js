@@ -42,15 +42,15 @@ const FormValidationExample = () => {
     }
 
     setErrors(validationErrors)
-
+    alert("Form Submitted successfully")
     if(Object.keys(validationErrors).length === 0) {
-        alert("Form Submitted successfully")
+       
     }
 
   }
 
   return (
-    <center>
+    <center className='x'>
     <div  className='a'>
       <div>
         <label>Username:</label>
@@ -94,7 +94,7 @@ const FormValidationExample = () => {
         />
           {errors.confirmPassword && <span>{errors.confirmPassword}</span>}  
       </div><p allign="center">
-      <button type="submit" >Submit</button></p>
+      <button type="submit"  onClick={handleSubmit} >Submit</button></p>
       </div>
       </center>
   );

@@ -1,4 +1,4 @@
-import { Content } from "antd/es/layout/layout";
+/*import { Content } from "antd/es/layout/layout";*/
 import "./App.css";
 /*import Form from "./Form";
 import "./Form.js"*/

@@ -1,15 +1,24 @@
 * {
   box-sizing: border-box;
 }
-form {
+.a {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);           
 }
-
+.x{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url('dim.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: cover;
+}
 /* Styles for the form fields and labels */
 form div {
   margin-bottom: 15px;
