@@ -9,14 +9,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 /*import { Header } from 'antd/es/layout/layout';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';*/
 import {Routes, Route,Link} from 'react-router-dom';
-
-import Home from "./Home"
+import Front from "./Front";
+import Home from "./Home";
 import Form from "./Form";
+import './home.css'
 import FormValidationExample from './FormValidationExample';
 function HeaderBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" top='0'>
         <Toolbar>
           <IconButton
             size="large"
@@ -36,15 +37,14 @@ function HeaderBar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             About
           </Typography> */}
-          <button >
-    <Link to='/Home'>Home</Link>
-    </button>
-    <button color="inherit">      
-    <Link to='/Form'>Login</Link>
-    </button>
-    <button>
-    <Link to='/FormValidationExample'>Form</Link>
-    </button>
+          <ul>
+          
+    
+    <li><Link to='/Home'>Home</Link></li>
+    <li><Link to='/Form'>Login</Link></li>
+    <li><Link to='/FormValidationExample'>Form</Link></li>
+ 
+    </ul>
     
       
     
@@ -54,6 +54,8 @@ function HeaderBar() {
       <Route path='/form' element={<Form/>}/>
       <Route path='/FormValidationExample' element={<FormValidationExample/>}/>
       <Route path='/Home' element={<Home/>}/>
+      <Route path='/' element={<Front/>}/>
+      
     </Routes>
       
     </Box>
